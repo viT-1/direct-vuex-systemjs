@@ -1,6 +1,7 @@
 {
 	"name": "direct-vuex-systemjs",
-	"version": "0.0.1",
+	"version": "0.0.2",
+	"description": "Test repository for implementing direct-vuex on SystemJs bundle",
 	"keywords": [
 		"systemjs",
 		"nobundle",
@@ -22,6 +23,7 @@
 		"www": "node -r esm ./dist/express.js"
 	},
 	"dependencies": {
+		"direct-vuex": "0.9.3",
 		"express": "4.17.1",
 		"promise-polyfill": "8.1.3",
 		"systemjs": "5.0.0",

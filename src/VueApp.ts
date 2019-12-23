@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import { Vue as TypeVue } from 'vue/types/vue';
 import Vuex from 'vuex';
+import { createDirectStore } from 'direct-vuex';
 
 import { storeConf } from './store';
 
@@ -11,7 +12,8 @@ export class VueApp {
 		Vue.config.devtools = true;
 
 		Vue.use(Vuex);
-		const store = new Vuex.Store(storeConf);
+		// const store = new Vuex.Store(storeConf);
+		const store = createDirectStore(storeConf).store.original;
 
 		return new Vue({
 			el: '#app',
