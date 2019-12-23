@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "system",
+		"moduleResolution": "node",
+		"target": "es5",
+		"outFile": "dist/bundle.system.js"
+	},
+	"exclude": [
+		"src/express.ts"
+	]
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="https://github.com/favicon.ico">
+
+	<!--IE11-->
+	<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1.3/dist/polyfill.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0.0/dist/fetch.umd.min.js"></script></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/systemjs@5.0.0/dist/system.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/systemjs@5.0.0/dist/extras/named-register.min.js"></script>
+</head>
+<body>
+	<div id="app">
+		<some-component>Vue is not loaded</some-component>
+	</div>
+	<script type="systemjs-importmap" src="importmap.system.json"></script>
+	<script>
+		System.import('./bundle.system.js')
+			.then(function () {
+				console.log('SystemJs bundle is loaded!');
+				System.import('main');
+			});
+	</script>
+</body>
+</html>
