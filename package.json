@@ -1,6 +1,6 @@
 {
 	"name": "direct-vuex-systemjs",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Test repository for implementing direct-vuex on SystemJs bundle",
 	"keywords": [
 		"systemjs",

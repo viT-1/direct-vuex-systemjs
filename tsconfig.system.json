@@ -1,6 +1,7 @@
 {
 	"compilerOptions": {
 		"baseUrl": ".",
+		"esModuleInterop": true,
 		"module": "system",
 		"moduleResolution": "node",
 		"target": "es5",
